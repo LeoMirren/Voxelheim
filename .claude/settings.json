@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=\"$HOME/.claude/bin/fast-check.sh\"; [ -x \"$f\" ] || exit 0; \"$f\" 'npx tsc --noEmit'"
+          }
+        ]
+      }
+    ]
+  }
+}
