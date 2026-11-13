@@ -16,3 +16,6 @@ A procedurally generated voxel sandbox that runs entirely in the browser. `DECIS
 
 ## Things the code won't tell you
 - There is no backend and there are no asset files. Textures are painted in code at boot and saves live in the browser.
+
+## Agent kit
+- The kit zip is in `.claude/agent-kit/` and the setup steps are in `.claude/rules/agent-kit.md`. On a new machine, say "set up the agent kit".
