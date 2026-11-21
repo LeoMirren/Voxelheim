@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=\"$HOME/.claude/bin/fast-check.sh\"; [ -x \"$f\" ] || exit 0; \"$f\" 'npx tsc --noEmit'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/agent-kit/ensure.sh\""
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
+}
